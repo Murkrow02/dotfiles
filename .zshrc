@@ -10,6 +10,7 @@ plugins=(
     archlinux
     zsh-autosuggestions
     zsh-syntax-highlighting
+    sudo
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -33,3 +34,9 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 setopt appendhistory
+
+# Alias to easily manage dotfiles repo
+alias dotfiles='/usr/bin/git --git-dir=$HOME/Repos/dotfiles/ --work-tree=$HOME'
+
+# Custom launch
+neofetch
