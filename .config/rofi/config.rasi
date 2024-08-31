@@ -5,10 +5,15 @@
 
 /* ---- Configuration ---- */
 configuration {
-	font: "Fira Code SemiBold 12";
+	show-icons: true;
 }
 
-element-text {
-    font:	"Fira Code SemiBold 14";
+#element.normal.normal {
+   background-color: #00000000;
+   text-color: #ffffff;
 }
 
+#element.alternate.normal {
+   background-color: #00000000;
+   text-color: #ffffff;
+}
