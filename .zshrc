@@ -38,5 +38,8 @@ setopt appendhistory
 # Alias to easily manage dotfiles repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/Repos/dotfiles/ --work-tree=$HOME'
 
+# Fix SSH on kitty
+alias ssh="kitten ssh"
+
 # Custom launch
 neofetch

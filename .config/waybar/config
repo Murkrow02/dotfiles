@@ -17,7 +17,7 @@
 		"memory",
 		"cpu",
 		"disk",
-		"pulseaudio",
+		"wireplumber",
 		"tray",
 		"custom/swaync",
 	],

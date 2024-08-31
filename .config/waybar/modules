@@ -487,7 +487,7 @@
 "network#speed": {
 	"interval": 1,
 	"format": "{ifname}",
-	"format-wifi": "{icon}   {bandwidthUpBytes}  {bandwidthDownBytes}",
+	"format-wifi": "{icon}     {bandwidthUpBytes}    {bandwidthDownBytes}",
 	"format-ethernet": "󰌘  {bandwidthUpBytes}  {bandwidthDownBytes}",
 	"format-disconnected": "󰌙",
 	"tooltip-format": "{ipaddr}",
@@ -512,31 +512,31 @@
     "power-saver": ""
   }
 },
-"pulseaudio": {
-	"format": "{icon} {volume}%",
-	"format-bluetooth": "{icon} 󰂰 {volume}%",
-	"format-muted": "󰖁",
-	"format-icons": {
-		"headphone": "",
-		"hands-free": "",
-		"headset": "",
-		"phone": "",
-		"portable": "",
-		"car": "",
-		"default": [
-			"", "", "󰕾",  " "
-		],
-		"ignored-sinks": [
-			"Easy Effects Sink"
-		],
-	},
-	"scroll-step": 5.0,
-	"on-click": "~/.config/hypr/scripts/Volume.sh --toggle",
-	"on-click-right": "pavucontrol -t 3",
-	"on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
-	"on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
-	"tooltip-format": "{icon} {desc} | {volume}%",
-	"smooth-scrolling-threshold": 1,
+"pulseaudio-custom": {
+        "format": "a{icon} {volume}%",
+        "format-bluetooth": "{icon} 󰂰 {volume}%",
+        "format-muted": "󰖁",
+        "format-icons": {
+                "headphone": "",
+                "hands-free": "",
+                "headset": "",
+                "phone": "",
+                "portable": "",
+                "car": "",
+                "default": [
+                        "", "", "󰕾",  " "
+                ],
+                "ignored-sinks": [
+                        "Easy Effects Sink"
+                ],
+        },
+        "scroll-step": 5.0,
+        "on-click": "~/.config/hypr/scripts/Volume.sh --toggle",
+        "on-click-right": "pavucontrol -t 3",
+        "on-scroll-up": "~/.config/hypr/scripts/Volume.sh --inc",
+        "on-scroll-down": "~/.config/hypr/scripts/Volume.sh --dec",
+        "tooltip-format": "{icon} {desc} | {volume}%",
+        "smooth-scrolling-threshold": 1,
 },
 "pulseaudio#1": {
   "format": "{icon} {volume}%",
@@ -589,7 +589,7 @@
 	"spacing": 4,
 },
 "wireplumber": {
-	"format": "{icon} {volume} %",
+	"format": "{icon}    {volume} %",
 	"format-muted": " Mute",
 	"on-click": "~/.config/hypr/scripts/Volume.sh --toggle",
 	"on-click-right": "pavucontrol -t 3",

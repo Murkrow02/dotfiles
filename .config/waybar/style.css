@@ -1,6 +1,6 @@
 * {
 	font-size: 14px;
-	font-family: monospace;
+	font-family: sans-serif;
 }
 
 window#waybar {
@@ -12,7 +12,7 @@ window#waybar {
 #clock.1,
 #clock.2,
 #clock.3,
-#pulseaudio,
+#wireplumber,
 #memory,
 #cpu,
 #network,
@@ -33,7 +33,7 @@ window#waybar {
 	color: red;
 }
 
-#pulseaudio {
+#wireplumber {
 	color: #268bd2;
 }
 #memory {
@@ -58,7 +58,7 @@ window#waybar {
 }
 
 #clock,
-#pulseaudio,
+#wireplumber,
 #memory,
 #cpu,
 #tray,
